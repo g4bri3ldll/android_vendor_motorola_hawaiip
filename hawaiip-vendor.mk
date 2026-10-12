@@ -718,7 +718,6 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libladder \
     libmemtrack_GL \
-    libminiui \
     libmmc5603 \
     libmml \
     libmmprofile \
@@ -929,7 +928,6 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibraryWrapper \
     lib_bsscore \
     libabfadp \
-    libacdk \
     libaedv \
     libarcsoft_distortion_correction \
     libarcsoft_faceid \
@@ -1190,7 +1188,6 @@ PRODUCT_PACKAGES += \
     dmc_core \
     dumpsys \
     epdg_wod \
-    factory \
     fuelgauged \
     fuelgauged_nvram \
     getgameserver \
