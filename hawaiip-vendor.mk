@@ -6,24 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/hawaiip
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/hawaiip/proprietary/system/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
-    vendor/motorola/hawaiip/proprietary/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/motorola/hawaiip/proprietary/system/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_stub.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_volumes.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/motorola/hawaiip/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
     vendor/motorola/hawaiip/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
     vendor/motorola/hawaiip/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.tlbin \
     vendor/motorola/hawaiip/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
@@ -578,43 +560,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hawaiip/proprietary/vendor/rw.prop:$(TARGET_COPY_OUT_VENDOR)/rw.prop
 
 PRODUCT_PACKAGES += \
-    libarcsoft_aiscenedetection \
-    libarcsoft_bokehcapture \
-    libarcsoft_bokehpreview \
-    libarcsoft_calibverify_TriCamera \
-    libarcsoft_dualcam_refocus_image \
-    libarcsoft_dualcam_refocus_video \
-    libarcsoft_hdr_detection \
-    libarcsoft_hdrcapture \
-    libarcsoft_hdrdetect \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_scbokeh_image \
-    libarcsoft_scbokeh_video \
-    libarcsoft_supernight \
-    libarcsoft_superportrait \
-    libarcsoft_tricam_calibration \
-    libarcsoft_tricam_verification \
-    libarcsoft_verify_cali \
-    libdatasource \
-    libged_sys \
-    libgralloc_extra_sys \
-    libmedia_codeclist \
-    libmpbase \
-    libplugincommon \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefright_codecbase \
-    libstagefright_framecapture_utils \
-    libstagefright_wfd_mtk \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.8 \
     AVCSecureVdecCA \
     audio_common-aidl-cpp \
     audioclient-types-aidl-cpp \
@@ -857,9 +802,6 @@ PRODUCT_PACKAGES += \
     libmockdrmcryptoplugin \
     libwvdrmengine \
     meta_wifi_data \
-    libdpframework \
-    libmtk_drvb \
-    libpq_prot \
     nfc_nci_sec \
     shared-file-region-aidl-cpp \
     libaudiopreprocessing_mtk \
@@ -1196,24 +1138,6 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.nwk_opt@1.0 \
-    vendor.mediatek.hardware.pq@2.10 \
-    vendor.mediatek.hardware.pq@2.11 \
-    vendor.mediatek.hardware.pq@2.12 \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.14 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.pq@2.7 \
-    vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.mediatek.hardware.composer_ext@1.0 \
     GoogleNetworkStackResOverlay \
     GoogleTetheringResOverlay \
     InProcessTetheringResOverlay \
