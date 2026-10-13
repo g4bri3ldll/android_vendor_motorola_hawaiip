@@ -759,6 +759,8 @@ PRODUCT_PACKAGES += \
     libpqframework \
     libpqparamparser \
     libpqpconfig \
+    libprotobuf-cpp-full-3.9.1 \
+    libprotobuf-cpp-lite-3.9.1 \
     librgbwlightsensor \
     librt_extamp_intf \
     libsensorndkbridge \
@@ -876,6 +878,7 @@ PRODUCT_PACKAGES += \
     libvpx \
     libvt_custom \
     vendor.mediatek.hardware.rcs@2.0 \
+    android.hardware.power-service-mediatek \
     gc02m1_tsp_p410ae_mipi_raw_IdxMgr \
     gc02m1_tsp_p410ae_mipi_raw_india_IdxMgr \
     gc02m1_tsp_p410ae_mipi_raw_india_tuning \
@@ -896,6 +899,7 @@ PRODUCT_PACKAGES += \
     hi1634_qt_p411be_mipi_raw_india_IdxMgr \
     hi1634_qt_p411be_mipi_raw_india_tuning \
     hi1634_qt_p411be_mipi_raw_tuning \
+    android.hardware.gnss-impl-mediatek \
     fingerprint.egis.default \
     fpsensor_fingerprint.default \
     hwcomposer.mt6765 \

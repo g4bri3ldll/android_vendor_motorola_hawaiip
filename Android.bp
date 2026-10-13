@@ -9195,6 +9195,82 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-3.9.1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-3.9.1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "librgbwlightsensor",
     owner: "motorola",
     strip: {
@@ -14116,6 +14192,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.power-service-mediatek",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.power-service-mediatek.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libbinder_ndk",
+                "android.hardware.power-V2-ndk_platform",
+                "libutils",
+                "libcutils",
+                "vendor.mediatek.hardware.mtkpower@1.0",
+                "vendor.mediatek.hardware.mtkpower@1.1",
+                "vendor.mediatek.hardware.mtkpower@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "gc02m1_tsp_p410ae_mipi_raw_IdxMgr",
     owner: "motorola",
     strip: {
@@ -14611,6 +14720,38 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.gnss-impl-mediatek",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "android.hardware.gnss-V1-ndk_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
