@@ -193,7 +193,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hawaiip/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/motorola/hawaiip/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/motorola/hawaiip/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/motorola/hawaiip/proprietary/vendor/etc/fstab.mt6765:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6765 \
     vendor/motorola/hawaiip/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/motorola/hawaiip/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/motorola/hawaiip/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
@@ -232,11 +231,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/motorola/hawaiip/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
-    vendor/motorola/hawaiip/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/disablefactory.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/disablefactory.rc \
@@ -300,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/vendor_flash_recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_flash_recovery.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
-    vendor/motorola/hawaiip/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -336,7 +332,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/hawaiip/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
     vendor/motorola/hawaiip/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/motorola/hawaiip/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/motorola/hawaiip/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/motorola/hawaiip/proprietary/vendor/etc/motorola/12m/cqatest_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_config.xml \
     vendor/motorola/hawaiip/proprietary/vendor/etc/motorola/12m/cqatest_pat_mode_order:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_pat_mode_order \
     vendor/motorola/hawaiip/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
@@ -561,8 +556,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
-    audio_common-aidl-cpp \
-    audioclient-types-aidl-cpp \
     libEGL_mtk \
     libGLES_meow \
     libGLESv1_CM_mtk \
@@ -571,7 +564,6 @@ PRODUCT_PACKAGES += \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
-    framework-permission-aidl-cpp \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
@@ -590,7 +582,6 @@ PRODUCT_PACKAGES += \
     gatekeeper.default \
     gatekeeper.trustonic \
     gps.default \
-    gralloc.default \
     gralloc.rogue \
     kmsetkey.default \
     kmsetkey.trustonic \
@@ -642,7 +633,6 @@ PRODUCT_PACKAGES += \
     libasn1c_mapi \
     libasn1c_mdmi \
     libaudio_param_parser-vnd \
-    libaudioclient_aidl_conversion \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -650,7 +640,6 @@ PRODUCT_PACKAGES += \
     libaudiocustparam_vendor \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
-    libaudiofoundation \
     libaudioloudc \
     libaudioprimarydevicehalifclient \
     libaudiotoolkit_vendor \
@@ -670,13 +659,10 @@ PRODUCT_PACKAGES += \
     libcares_naptr \
     libcarrierconfig \
     libccci_util \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
     libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_common \
     libcodec2_soft_mtk_alacdec \
     libcodec2_soft_mtk_apedec \
     libcodec2_soft_mtk_imaadpcmdec \
@@ -759,21 +745,15 @@ PRODUCT_PACKAGES += \
     libpqframework \
     libpqparamparser \
     libpqpconfig \
-    libprotobuf-cpp-full-3.9.1 \
-    libprotobuf-cpp-lite-3.9.1 \
     librgbwlightsensor \
     librt_extamp_intf \
     libsensorndkbridge \
-    libsfplugin_ccodec_utils \
-    libshmemcompat \
-    libshmemutil \
     libsimlock \
     libsimmelock \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libsrv_um \
     libssl-mdapp \
-    libstagefright_bufferpool@2.0.1 \
     libstagefrighthw \
     libsysenv \
     libthha \
@@ -792,7 +772,6 @@ PRODUCT_PACKAGES += \
     libvcodec_utility \
     libvcodecdrv_header_stub \
     libverno \
-    libvibrator \
     libvpu5 \
     libwapi \
     libwo \
@@ -804,7 +783,6 @@ PRODUCT_PACKAGES += \
     libwvdrmengine \
     meta_wifi_data \
     nfc_nci_sec \
-    shared-file-region-aidl-cpp \
     libaudiopreprocessing_mtk \
     libdynproc \
     libhapticgenerator \
@@ -868,14 +846,12 @@ PRODUCT_PACKAGES += \
     libmp4enc_xa.ca7 \
     librcs_interface \
     librcs_volte_core \
-    libstagefright_softomx_plugin \
     libthermalalgo \
     libvcodecdrv \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
-    libvpx \
     libvt_custom \
     vendor.mediatek.hardware.rcs@2.0 \
     android.hardware.power-service-mediatek \
@@ -935,7 +911,6 @@ PRODUCT_PACKAGES += \
     libaedv \
     libarcsoft_distortion_correction \
     libarcsoft_faceid \
-    libbinderdebug \
     libcam.chdr \
     libcam.feature_utils \
     libcam.hal3a.cctsvr \
@@ -980,8 +955,6 @@ PRODUCT_PACKAGES += \
     libcharon-ss \
     libchiponeic_fingerprint_factory \
     libcomposer_ext \
-    libcppbor_external \
-    libcppcose_rkp \
     libeffecthal.base \
     libem_sensor_jni \
     libfeature.face \
@@ -998,16 +971,11 @@ PRODUCT_PACKAGES += \
     libfp_ext_svc2 \
     libgwsd-ril \
     libheichal \
-    libhwc2onfbadapter \
     libhydra \
     libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libkeymaster4 \
-    libkeymaster41 \
-    libkeymaster4_1support \
-    libkeystore-engine-wifi-hidl \
     libkmsetkey \
     libksensor \
     liblpcnr \
@@ -1088,17 +1056,14 @@ PRODUCT_PACKAGES += \
     librilfusion \
     libsensor_custom \
     libsimaka \
-    libsoft_attestation_cert \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
     libstrongswan \
     libtrm \
     libvia-ril \
     libviamipc-ril \
-    libwifi-hal \
     libwifitest \
     libwpfa \
-    libz_stable \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
     ov16a1q_qt_p410ae_mipi_raw_IdxMgr \
@@ -1154,16 +1119,11 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-mediatekv2.xml \
     android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
-    android.hardware.wifi@1.0-service.xml \
-    gnss-default.xml \
-    gnss@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
     lights-mtk-default.xml \
-    manifest_android.hardware.drm@1.4-service.clearkey.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
-    power-default.xml \
     vibrator-mtk-default.xml \
     et528_factory_manifest.xml \
     fpsensor_factory_manifest.xml \
@@ -1181,16 +1141,12 @@ PRODUCT_PACKAGES += \
     audiocmdservice_atci \
     autobt \
     bip \
-    boringssl_self_test32 \
-    boringssl_self_test64 \
     ccci_mdinit \
     ccci_rpcd \
     charon \
     chipinfo \
     disablefactory \
-    dmabuf_dump \
     dmc_core \
-    dumpsys \
     epdg_wod \
     fuelgauged \
     fuelgauged_nvram \
@@ -1221,7 +1177,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.vibrator-service.mediatek \
-    android.hardware.wifi@1.0-service-lazy \
     camerahalserver \
     hostapd \
     mtkfusionrild \

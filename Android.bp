@@ -55,87 +55,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "audio_common-aidl-cpp",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/audio_common-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/audio_common-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "audioclient-types-aidl-cpp",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/audioclient-types-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "audio_common-aidl-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/audioclient-types-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "audio_common-aidl-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libEGL_mtk",
@@ -501,44 +421,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "framework-permission-aidl-cpp",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/framework-permission-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/framework-permission-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "android.hardware.audio.effect@6.0-impl",
@@ -1450,45 +1332,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "gralloc.default",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/gralloc.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/gralloc.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "gralloc.rogue",
@@ -2993,7 +2836,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libPVRMtkutils.so",
             ],
             shared_libs: [
-                "libsrv_um",
                 "libdl",
                 "libc++",
                 "libbase",
@@ -3015,7 +2857,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libPVRMtkutils.so",
             ],
             shared_libs: [
-                "libsrv_um",
                 "libdl",
                 "libc++",
                 "libbase",
@@ -3884,56 +3725,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libaudioclient_aidl_conversion",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudioclient_aidl_conversion.so",
-            ],
-            shared_libs: [
-                "audioclient-types-aidl-cpp",
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libshmemcompat",
-                "libutils",
-                "shared-file-region-aidl-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioclient_aidl_conversion.so",
-            ],
-            shared_libs: [
-                "audioclient-types-aidl-cpp",
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libshmemcompat",
-                "libutils",
-                "shared-file-region-aidl-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libaudiocompensationfilter_vendor",
@@ -4250,56 +4041,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libaudiofoundation",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudiofoundation.so",
-            ],
-            shared_libs: [
-                "audioclient-types-aidl-cpp",
-                "libaudioclient_aidl_conversion",
-                "libaudioutils",
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libmedia_helper",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudiofoundation.so",
-            ],
-            shared_libs: [
-                "audioclient-types-aidl-cpp",
-                "libaudioclient_aidl_conversion",
-                "libaudioutils",
-                "libbase",
-                "libbinder",
-                "liblog",
-                "libmedia_helper",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libaudioloudc",
@@ -5104,159 +4845,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.1",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.2",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl_plugin",
@@ -5528,56 +5117,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_common",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libcodec2_soft_mtk_alacdec",
@@ -9194,81 +8733,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-3.9.1",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-3.9.1",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "librgbwlightsensor",
@@ -9419,136 +8884,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libsfplugin_ccodec_utils",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsfplugin_ccodec_utils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libshmemcompat",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libshmemcompat.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libshmemutil",
-                "libutils",
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libshmemcompat.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libshmemutil",
-                "libutils",
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libshmemutil",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libshmemutil.so",
-            ],
-            shared_libs: [
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libshmemutil.so",
-            ],
-            shared_libs: [
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libsimlock",
@@ -9726,7 +9063,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsrv_um.so",
             ],
             shared_libs: [
-                "libPVRMtkutils",
                 "liblog",
                 "libm",
                 "libdl",
@@ -9740,7 +9076,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsrv_um.so",
             ],
             shared_libs: [
-                "libPVRMtkutils",
                 "liblog",
                 "libm",
                 "libdl",
@@ -9790,52 +9125,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libstagefrighthw",
@@ -10583,46 +9872,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libvibrator",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvibrator.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvibrator.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libvpu5",
@@ -10806,7 +10055,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libutils",
                 "libc++",
                 "libc",
@@ -10831,7 +10079,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libutils",
                 "libc++",
                 "libc",
@@ -10857,12 +10104,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mediacas/libclearkeycasplugin.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
                 "libutils",
                 "liblog",
                 "libcrypto",
                 "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -10874,12 +10119,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
                 "libutils",
                 "liblog",
                 "libcrypto",
                 "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -10993,7 +10236,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libhidlbase",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -11011,7 +10253,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libhidlbase",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -11117,44 +10358,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "shared-file-region-aidl-cpp",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/shared-file-region-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/shared-file-region-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libaudiopreprocessing_mtk",
@@ -13920,33 +13123,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libstagefright_softomx_plugin",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_softomx_plugin.so",
-            ],
-            shared_libs: [
-                "libstagefright_softomx",
-                "libstagefright_foundation",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libthermalalgo",
@@ -14115,29 +13291,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libvpx",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpx.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libvt_custom",
@@ -15814,31 +14967,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libbinderdebug",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbinderdebug.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libcam.chdr",
@@ -17262,58 +16390,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libcppbor_external",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppbor_external.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libcppcose_rkp",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppcose_rkp.so",
-            ],
-            shared_libs: [
-                "libcppbor_external",
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libeffecthal.base",
@@ -17856,31 +16933,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libhwc2onfbadapter",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwc2onfbadapter.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libhydra",
@@ -18028,141 +17080,9 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libkeymaster4",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster4.so",
-            ],
-            shared_libs: [
-                "libkeymaster_messages",
-                "android.hardware.keymaster@4.0",
-                "libcrypto",
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "libkeymaster_portable",
-                "libpuresoftkeymasterdevice",
-                "liblog",
-                "libutils",
-                "libkeymaster4support",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libkeymaster41",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster41.so",
-            ],
-            shared_libs: [
-                "android.hardware.keymaster@4.0",
-                "android.hardware.keymaster@4.1",
-                "libbase",
-                "libcrypto",
-                "libcutils",
-                "libhidlbase",
-                "libkeymaster4",
-                "libkeymaster4_1support",
-                "libkeymaster4support",
-                "libkeymaster_messages",
-                "libkeymaster_portable",
-                "liblog",
-                "libpuresoftkeymasterdevice",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libkeymaster4_1support",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster4_1support.so",
-            ],
-            shared_libs: [
-                "android.hardware.keymaster@3.0",
-                "android.hardware.keymaster@4.0",
-                "android.hardware.keymaster@4.1",
-                "libbase",
-                "libcrypto",
-                "libhidlbase",
-                "libkeymaster4support",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libkeystore-engine-wifi-hidl",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so",
-            ],
-            shared_libs: [
-                "android.system.keystore2-V1-ndk_platform",
-                "libbase",
-                "libbinder_ndk",
-                "libcrypto",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libkmsetkey",
@@ -20965,30 +19885,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libsoft_attestation_cert",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsoft_attestation_cert.so",
-            ],
-            shared_libs: [
-                "libkeymaster_portable",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libstereoinfoaccessor_vsdof",
@@ -21159,34 +20055,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libwifi-hal",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libwifitest",
@@ -21244,28 +20112,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libz_stable",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libz_stable.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libmtkcam_streaminfo_plugin-p1stt",
@@ -21748,7 +20594,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "android.hidl.base@1.0",
                 "libc++",
                 "libdl",
                 "libc",
@@ -22552,32 +21397,8 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "android.hardware.wifi@1.0-service.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
-prebuilt_etc_xml {
-    name: "gnss-default.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/gnss-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
-prebuilt_etc_xml {
-    name: "gnss@2.1-service.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/gnss@2.1-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
 prebuilt_etc_xml {
     name: "lbs_hidl_service@1.0.xml",
@@ -22597,14 +21418,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "manifest_android.hardware.drm@1.4-service.clearkey.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
 prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.4-service.widevine.xml",
@@ -22633,14 +21446,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "power-default.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/power-default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
 
 prebuilt_etc_xml {
     name: "vibrator-mtk-default.xml",
@@ -22786,7 +21591,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libcrypto",
                 "liblog",
-                "libz_stable",
                 "libziparchive",
                 "libc++",
                 "libc",
@@ -22924,55 +21728,7 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "boringssl_self_test32",
-    owner: "motorola",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test32",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
-cc_prebuilt_binary {
-    name: "boringssl_self_test64",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test64",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "ccci_mdinit",
@@ -23095,30 +21851,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "dmabuf_dump",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dmabuf_dump",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "dmc_core",
@@ -23155,34 +21887,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "dumpsys",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dumpsys",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libbinderdebug",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "epdg_wod",
@@ -23545,7 +22249,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
                 "libutils",
                 "libc++",
                 "libc",
@@ -24203,45 +22906,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.wifi@1.0-service-lazy",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libwifi-hal",
-                "libwifi-system-iface",
-                "libxml2",
-                "android.hardware.wifi@1.0",
-                "android.hardware.wifi@1.1",
-                "android.hardware.wifi@1.2",
-                "android.hardware.wifi@1.3",
-                "android.hardware.wifi@1.4",
-                "android.hardware.wifi@1.5",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "camerahalserver",
