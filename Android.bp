@@ -1066,7 +1066,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "hw",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -3379,7 +3378,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -4359,7 +4357,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -4888,7 +4885,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -8880,7 +8876,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -10132,7 +10127,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mediacas",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -10176,7 +10170,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mediadrm",
-    prefer: true,
     soc_specific: true,
 }
 

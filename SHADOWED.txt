@@ -1,0 +1,7 @@
+audio.r_submix.default
+libalsautils
+libbluetooth_audio_session
+libclearkeycasplugin
+libcodec2_hidl_plugin
+libdrmclearkeyplugin
+libsensorndkbridge
